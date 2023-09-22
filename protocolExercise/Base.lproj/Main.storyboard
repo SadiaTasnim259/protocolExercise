@@ -27,6 +27,9 @@
                                         <state key="normal" title="Student">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="skx-8a-qUb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlW-Ev-gN4">
                                         <rect key="frame" x="0.0" y="128.33333333333331" width="333" height="98.333333333333314"/>
@@ -36,6 +39,9 @@
                                         <state key="normal" title="Teacher">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xA4-0f-MEI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uA7-mE-NC9">
                                         <rect key="frame" x="0.0" y="256.66666666666663" width="333" height="98.333333333333314"/>
@@ -45,6 +51,9 @@
                                         <state key="normal" title="Parents">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XPp-bm-nhw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -65,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="1040.4580152671756" y="-27.464788732394368"/>
         </scene>
-        <!--View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="6Yp-6H-jtJ">
             <objects>
-                <viewController id="7vY-RI-N8m" sceneMemberID="viewController">
+                <viewController id="7vY-RI-N8m" customClass="DetailsViewController" customModule="protocolExercise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hSM-w5-xDN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,6 +101,9 @@
                             <constraint firstItem="zbq-iB-Hto" firstAttribute="centerY" secondItem="hSM-w5-xDN" secondAttribute="centerY" id="fnK-AP-tbS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="showLabel" destination="zbq-iB-Hto" id="EDR-EO-4vd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwz-hG-BcB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
