@@ -91,17 +91,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxP-Ik-4of">
+                                <rect key="frame" x="0.0" y="468.66666666666669" width="393" height="50.000000000000057"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JUA-WP-Pgk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" red="0.80489450689999997" green="0.39796221259999998" blue="0.53524369000000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AjY-nv-hod"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="AjY-nv-hod" firstAttribute="trailing" secondItem="zxP-Ik-4of" secondAttribute="trailing" id="17u-nt-1Qw"/>
+                            <constraint firstItem="zxP-Ik-4of" firstAttribute="leading" secondItem="AjY-nv-hod" secondAttribute="leading" id="LGj-qc-C5X"/>
                             <constraint firstItem="zbq-iB-Hto" firstAttribute="leading" secondItem="AjY-nv-hod" secondAttribute="leading" constant="30" id="W6i-tP-czq"/>
                             <constraint firstItem="zbq-iB-Hto" firstAttribute="centerX" secondItem="hSM-w5-xDN" secondAttribute="centerX" id="Xg3-72-CYD"/>
                             <constraint firstItem="AjY-nv-hod" firstAttribute="trailing" secondItem="zbq-iB-Hto" secondAttribute="trailing" constant="30" id="fZS-t5-MN0"/>
+                            <constraint firstItem="zxP-Ik-4of" firstAttribute="top" secondItem="zbq-iB-Hto" secondAttribute="bottom" constant="10" id="fhd-85-bcI"/>
                             <constraint firstItem="zbq-iB-Hto" firstAttribute="centerY" secondItem="hSM-w5-xDN" secondAttribute="centerY" id="fnK-AP-tbS"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="professionLabel" destination="zxP-Ik-4of" id="J6v-NW-FYa"/>
                         <outlet property="showLabel" destination="zbq-iB-Hto" id="EDR-EO-4vd"/>
                     </connections>
                 </viewController>
