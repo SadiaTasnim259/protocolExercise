@@ -28,7 +28,6 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="skx-8a-qUb"/>
                                             <action selector="studentButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iER-jY-25p"/>
                                         </connections>
                                     </button>
@@ -41,7 +40,6 @@
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xA4-0f-MEI"/>
                                             <action selector="teacherButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aun-xh-VRx"/>
                                         </connections>
                                     </button>
@@ -54,7 +52,6 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XPp-bm-nhw"/>
                                             <action selector="parentsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4l5-uz-IFT"/>
                                         </connections>
                                     </button>

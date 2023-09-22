@@ -8,23 +8,21 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
-    
-    var delegate: PanelDelegate!
-    var viewController = ViewController()
 
     @IBOutlet weak var showLabel: UILabel!
+    var studentName:StudentModel?
+    var teacherName:TeacherModel?
+    var parentName: ParentsModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //viewController.selectedDelegate = self
+        callingFunc()
+    }
+    func callingFunc(){
+        showLabel.text = studentName?.fullName()
+        showLabel.text = teacherName?.fullName()
+        showLabel.text = parentName?.fullName()
     }
 }
 
-extension DetailsViewController: PanelDelegate{
-    
-    func updateName(firstName: String, lastName: String) {
-        showLabel.text = firstName+" "+lastName
-    }
-    
-    
-}
+
