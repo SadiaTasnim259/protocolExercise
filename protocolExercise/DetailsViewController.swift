@@ -19,9 +19,15 @@ class DetailsViewController: UIViewController {
         callingFunc()
     }
     func callingFunc(){
-        showLabel.text = studentName?.fullName()
-        showLabel.text = teacherName?.fullName()
-        showLabel.text = parentName?.fullName()
+        if let studentName{
+            showLabel.text = studentName.fullName()
+        }
+        if let teacherName{
+            showLabel.text = teacherName.fullName()
+        }
+        if let parentName{
+            showLabel.text = parentName.fullName()
+        }
     }
 }
 
