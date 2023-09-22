@@ -10,6 +10,8 @@ import UIKit
 class DetailsViewController: UIViewController {
 
     @IBOutlet weak var showLabel: UILabel!
+    @IBOutlet weak var professionLabel: UILabel!
+    
     var studentName:StudentModel?
     var teacherName:TeacherModel?
     var parentName: ParentsModel?
@@ -20,13 +22,17 @@ class DetailsViewController: UIViewController {
     }
     func callingFunc(){
         if let studentName{
-            showLabel.text = studentName.fullName()
+            showLabel.text = studentName.firstName
+            professionLabel.text = studentName.profession()
+            
         }
         if let teacherName{
-            showLabel.text = teacherName.fullName()
+            showLabel.text = teacherName.firstName
+            professionLabel.text = teacherName.profession()
         }
         if let parentName{
-            showLabel.text = parentName.fullName()
+            showLabel.text = parentName.firstName
+            professionLabel.text = parentName.profession()
         }
     }
 }
