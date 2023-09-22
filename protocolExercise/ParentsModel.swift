@@ -8,6 +8,7 @@
 import Foundation
 
 struct ParentsModel{
+    
     private var firstName: String
     private var lastName: String
     
