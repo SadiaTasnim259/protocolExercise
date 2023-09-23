@@ -87,7 +87,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="W8p-GT-jCm"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -96,8 +96,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="JUA-WP-Pgk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <color key="textColor" red="0.80489450689999997" green="0.39796221259999998" blue="0.53524369000000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
