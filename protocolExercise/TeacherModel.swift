@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TeacherModel{
+class TeacherModel: Characteristics{
     var firstName: String
     var lastName: String
     
@@ -17,6 +17,6 @@ class TeacherModel{
     }
     
     func profession()-> String{
-        return "Teaching"
+        return "Teacher"
     }
 }

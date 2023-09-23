@@ -7,7 +7,6 @@
 
 import UIKit
 class ViewController: UIViewController {
-
     let student = StudentModel(firstName: "sadia", lastName: "tasnim")
     let teacher = TeacherModel(firstName: "junaed", lastName: "chowdhury")
     let parentModel = ParentsModel(firstName: "Taher", lastName: "Islam")
@@ -17,24 +16,20 @@ class ViewController: UIViewController {
     }
 
     @IBAction func studentButtonTapped(_ sender: UIButton) {
-
         let detailsViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
-        detailsViewController.studentName = student
+        detailsViewController.person = student
         self.navigationController?.pushViewController(detailsViewController, animated: true)
     }
 
     @IBAction func teacherButtonTapped(_ sender: UIButton) {
-        
         let detailsViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
-        detailsViewController.teacherName = teacher
+        detailsViewController.person = teacher
         self.navigationController?.pushViewController(detailsViewController, animated: true)
-
     }
 
     @IBAction func parentsButtonTapped(_ sender: UIButton) {
-
         let detailsViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
-        detailsViewController.parentName = parentModel
+        detailsViewController.person = parentModel
         self.navigationController?.pushViewController(detailsViewController, animated: true)
     }
 
